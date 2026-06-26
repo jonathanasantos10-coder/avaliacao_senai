@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#geral {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#form {
+    width: 350px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,select, button {
+    margin: auto;
+    padding: 5px;
+}
+
+button {
+    margin: auto;
+}
+
+#resultado-lote {
+    width: 350px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.ap-novo{
+    
+    margin: 20px auto;
+    padding: 10px;
+    text-align: justify;
+}
