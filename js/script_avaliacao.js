@@ -29,7 +29,7 @@ const addAp = (objAp) => {
 const listaApartamento = () => {
     divResult.innerHTML = ''
     apartamento.forEach((elem, i) => {
-    divResult.innerHTML += `<div-class = 'apNovo'> Lote ${i + 1} <br> Descrição: Quadra ${elem.quadra} - Lote ${elem.lote} <br> Largura do lote: ${elem.largura} <br> Comprimento do lote: ${elem.comprimento} <br> Área do Apartamento em M²: ${parseFloat(calculoArea(elem)).toFixed(2)} <br> Valor do lote em R$: ${parseFloat(calculoLote(elem)).toFixed(2).replace('.',',')} <br> Valor da taxa do lote: ${taxalote(elem)} <br> <br>` 
+    divResult.innerHTML += `<div-class = 'apNovo'> Lote ${i + 1} <br> Descrição: Quadra ${elem.quadra} - Lote ${elem.lote} <br> Largura do lote: ${elem.largura} <br> Comprimento do lote: ${elem.comprimento} <br> Área do Apartamento em M²: ${parseFloat(calculoArea(elem)).toFixed(2)} <br> Valor do lote em R$: ${parseFloat(calculoLote(elem)).toFixed(2).replace('.',',')} <br> Valor da taxa do lote: ${taxalote(elem)}<br> <br>` 
 })
 }
 let  aream2 = ''
