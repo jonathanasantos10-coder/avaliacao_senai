@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/script_avaliacao.js" type="module" defer></script>
+    <script src="js/script_avaliacao.js" defer></script>
     <title>Avaliação - Lote de AP</title>
 </head>
 <body>
     
     <div id="geral"> 
-        <h3></h3>
+        <h3>Calculo de lote</h3>
+        <p> O Valor do m² quadrado da área está fixado em R$ 550,00.</p>
     </div>
 
+    <div id="form">
+        <form id="form-lote">
 
+        <label for="largura"> Largura </label>
+        <input type="number" id="largura" name="largura" required>
 
+        <label for="comprimento"> Comprimento </label>
+        <input type="number" id="comprimento" name="comprimento" required>
+
+        </form>
+    </div>
+
+    <div id="resultado-lote">
+
+    </div>
 
 
 </body>
