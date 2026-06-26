@@ -29,11 +29,29 @@ const addAp = (objAp) => {
 const listaApartamento = () => {
     divResult.innerHTML = ''
     apartamento.forEach((elem, i) => {
-    divResult.innerHTML += `<div-class = 'apNovo'> Lote ${i + 1} <br> Descrição: Quadra ${elem.quadra} - Lote ${elem.lote} <br> Largura do lote: ${elem.largura} <br> Comprimento do lote: ${elem.comprimento} <br> ${calculoArea(elem)}`
+    divResult.innerHTML += `<div-class = 'apNovo'> Lote ${i + 1} <br> Descrição: Quadra ${elem.quadra} - Lote ${elem.lote} <br> Largura do lote: ${elem.largura} <br> Comprimento do lote: ${elem.comprimento} <br> ${calculoArea(elem)} <br> ${calculoLote(elem)} <br> taxa do lote: ${taxalote(elem)}` // colocar to fixed para deixar legível em forma de moeda no calculolote
 })
 }
 let  aream2 = ''
+
 const calculoArea = (objAp) =>{
-    aream2 = `Área m² do AP: ${parseFloat(objAp.largura) * (objAp.comprimento)}`
+    aream2 = `${parseFloat(objAp.largura) * (objAp.comprimento)}`
     return aream2
+
+}
+let valorLote = ''
+let valorFixo = 550
+
+const calculoLote = (calculoArea) =>{
+    valorLote = `${parseFloat(aream2) * (valorFixo)}` 
+    return valorLote
+} 
+let taxa = ''
+const taxalote = (calculoLote) => {
+    if ((valorLote) < 20000){
+    taxa = `Isento de taxa`
+    } else
+    taxa = `tudo companheiro`
+
+    return taxa
 }
